@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap");
 
 :root {
   --primary: #42da3d;
@@ -14,8 +14,8 @@
   --white: #faf9f6;
 
   /* Typography */
-  --ff: "Be Vietnam Pro", sans-serif;
-
+  --ff: "Be Vietnam Pro", cursive;
+  --ff-logo: "Edu AU VIC WA NT Hand", cursive;
   --fs-1: 6.5rem;
   --fs-2: 3.2rem;
   --fs-3: 2.4rem;
@@ -221,6 +221,7 @@ li {
 }
 
 .logo {
+  font-family: var(--ff-logo);
   font-size: 3rem;
 }
 
@@ -273,10 +274,57 @@ li {
   color: var(--primary-dark);
 }
 
+/* Hero */
+.hero {
+  min-height: 360px;
+  background-position: left;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+}
+
+.hero-title .span {
+  font-size: 0.5em;
+  display: block;
+}
+
+.hero-title {
+  color: var(--black);
+  text-shadow: #02020a;
+  font-size: var(--fs-3);
+}
+
+.hero-subtitle {
+  color: var(--primary-content);
+  font-size: var(--fs-5);
+  margin-block: 12px;
+}
+
+.hero .btn {
+  margin-inline: auto;
+}
+
+.hero .btn:is(:hover, :focus) {
+  background-color: var(--primary-dark);
+}
+
 @media (min-width: 575px) {
   :root {
     --fs-2: 4rem;
     --fs-3: 2.6rem;
+  }
+
+  /**
+   * HERO
+   */
+
+  .hero {
+    display: flex;
+    padding-inline-start: 20px;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
@@ -284,12 +332,19 @@ li {
   :root {
     --fs-1: 9rem;
   }
+
+  .hero {
+    aspect-ratio: 1512 / 784;
+    padding-inline-start: 10%;
+  }
+
+  .hero-text {
+    font-size: 2.4rem;
+  }
 }
 
 @media (min-width: 992px) {
   :root {
-    --fs-1: 12rem;
-    --fs-3: 3rem;
     --section-padding: 3.125rem;
     --section-padding: 70px;
   }
@@ -338,5 +393,16 @@ li {
 
   .header.active .navbar-link:is(:hover, :focus) {
     color: var(--primary-light);
+  }
+
+  /* Hero */
+  .hero {
+    /* margin-block-start: 0 */
+    height: 100vh;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 7rem;
   }
 }

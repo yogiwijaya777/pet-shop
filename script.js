@@ -8,7 +8,7 @@ const addEventOnElem = function (elem, type, callback) {
   }
 };
 
-// Navbar toogl
+// Navbar toogle
 
 const navToggler = document.querySelector("[data-nav-toggler]");
 const navbar = document.querySelector("[data-navbar]");
@@ -27,3 +27,19 @@ const closeNavbar = function () {
 };
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
+
+/**
+ * active header when window scroll down to 100px
+ */
+
+const header = document.querySelector("[data-header]");
+
+const activeElemOnScroll = function () {
+  if (window.scrollY > 100) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+};
+
+addEventOnElem(window, "scroll", activeElemOnScroll);
