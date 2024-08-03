@@ -312,9 +312,9 @@ li {
 
 /* Products */
 
-/* .products {
+.products {
   height: 100vh;
-} */
+}
 
 .product-list {
   display: flex;
@@ -325,7 +325,6 @@ li {
 
 .product-item {
   width: 25%;
-  height: 25%;
 }
 
 .product-item img {
