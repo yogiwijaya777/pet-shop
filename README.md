@@ -21,6 +21,7 @@ Link Deployment : https://yogiwijaya777.github.io/pet-shop/
 
 ## Website Preview :
 
-![Deskripsi Gambar](path/ke/gambar.png)
-![Deskripsi Gambar](path/ke/gambar.png)
-![Deskripsi Gambar](path/ke/gambar.png)
+![Large Device](website-screenshoot/large-device.png)
+![Medium Device](website-screenshoot/medium-device.png)
+![Small Device](website-screenshoot/small-device.png)
+![Small - Medium Navbar](website-screenshoot/small-medium-navbar.png)
